@@ -4,7 +4,7 @@ import field from "../../support/PageObjects/field";
 context("Account creation", () => {
   describe("User creating account", () => {
     it("User should be able to create an account", async () => {
-      const email = "test_1@gamil.com";
+      const email = "test_2@gamil.com";
       const password = "123456789";
       const name = "VISWA KARMA";
       await cy.visit(Cypress.env("url"));
@@ -25,7 +25,7 @@ context("Account creation", () => {
         .get(".login-form > :nth-child(1)")
         .should("be.text", "Enter Account Information");
       await cy.get("#id_gender1").check().should("be.checked");
-      await field.password().type(password);
+      await field.password1().type(password);
       await cy.get('[data-qa="days"]').select("10");
       await cy.get('[data-qa="months"]').select("11");
       await cy.get('[data-qa="years"]').select("1997");
