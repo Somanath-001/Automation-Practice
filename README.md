@@ -11,8 +11,7 @@ It includes test scripts that interact with the Automation Practice website to p
 
 ### Prerequisites
 
-- Node.js (version X.X.X)
-- WebDriverIO (version X.X.X)
+- Node.js (version v20.2.0)
 - Chrome or Firefox browser
 
 ### Installation
